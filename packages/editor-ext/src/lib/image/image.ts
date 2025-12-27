@@ -140,9 +140,9 @@ export const TiptapImage = Image.extend<ImageOptions>({
 
   addProseMirrorPlugins() {
     return [
-      ImageUploadPlugin({
-        placeholderClass: "image-upload",
-      }),
+      // ImageUploadPlugin({
+      //   placeholderClass: "image-upload",
+      // }),
     ];
   },
 });

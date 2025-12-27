@@ -20,6 +20,7 @@ export const ImageUploadPlugin = ({
         set = set.map(tr.mapping, tr.doc);
         // See if the transaction adds or removes any placeholders
         //@-ts-expect-error - not yet sure what the type I need here
+        console.log(tr.getMeta(this) + "meta");
         const action = tr.getMeta(this);
         if (action?.add) {
           const { id, pos, src } = action.add;
